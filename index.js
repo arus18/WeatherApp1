@@ -41,6 +41,6 @@ function httpRequestAsync(url, callback)
         if (httpRequest.readyState == 4 && httpRequest.status == 200)
             callback(httpRequest.responseText);
     }
-    httpRequest.open("GET", url, true); // true for asynchronous 
+    httpRequest.open("GET", url, true);
     httpRequest.send();
 }
